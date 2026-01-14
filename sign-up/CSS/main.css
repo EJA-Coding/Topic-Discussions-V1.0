@@ -1,0 +1,197 @@
+body {
+    font-family: "Google Sans Flex", Arial;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(22, 22, 22, 0.842);
+    overflow-y: hidden;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: solid;
+    border-color: rgb(73, 73, 73);
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.387);
+}
+
+.title {
+    color: white;
+    font-family: 'Ubuntu', Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.password-input,
+.confirm-password-input,
+.user-input {
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 5px;
+    width: 300px;
+    padding-left: 10px;
+    height: 40px;
+}
+
+.confirm-password-input {
+    margin-top: 13px;
+}
+
+.password-input {
+    margin: 3px 7px;
+}
+
+.user-input {
+    margin: 3px 7px;
+    margin-top: 7px;
+}
+
+.sign-up-button {
+    font-family: 'Google Sans Flex';
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    background-color: rgba(4, 5, 10, 0.384);
+    border: none;
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.15s;
+}
+
+.sign-up-button:hover {
+    opacity: 0.8;
+}
+
+.sign-up-button:active {
+    background-color: white;
+    color: rgb(30, 30, 30);
+}
+
+.already-an-account {
+    color: white;
+}
+
+.continue-google {
+    position: relative;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: solid, 2px rgba(117, 116, 116, 0.767);
+    width: 261px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding: 3px;
+    font-family: 'Roboto';
+    transition: all 0.15s;
+}
+
+.continue-google:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.continue-google:active {
+    background-color: rgb(75, 75, 75);
+}
+
+.continue-facebook {
+    position: relative;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: solid, 2px rgba(117, 116, 116, 0.767);
+    width: 261px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    transition: all 0.15s;
+}
+
+.continue-facebook:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.continue-facebook:active {
+    background-color: rgb(75, 75, 75);
+}
+
+.google-img {
+    position: absolute;
+    width: 30px;
+    left: 10px;
+}
+
+.facebook-img {
+    left: 10px;
+    width: 30px;
+    position: absolute;
+}
+
+.wrong-input {
+    background-color: red;
+    display: none;
+    position: absolute;
+    border-radius: 50px;
+    bottom: 20px;
+    left: 50%;
+    right: 50%;
+    width: 500px;
+    height: 55px;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    animation: error 0.2s ease;
+}
+
+.wrong-text {
+    color: white;
+    font-size: 18px;
+}
+
+.display {
+    display: flex;
+}
+
+@keyframes error {
+    0% {
+        transform: translateX(-50%);
+        bottom: -100px;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+}

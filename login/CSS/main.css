@@ -1,0 +1,242 @@
+body {
+    font-family: "Google Sans Flex", Arial;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(22, 22, 22, 0.842);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: solid;
+    border-color: rgb(73, 73, 73);
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.387);
+}
+
+.pasword-input-container {
+    position: relative;
+}
+
+.new-account {
+    color: white;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.new-account:hover {
+    opacity: 0.7;
+}
+
+.new-account-container {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.reset-password {
+    color: white;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.reset-password:hover {
+    opacity: 0.7;
+}
+
+.title {
+    color: white;
+    font-family: 'Ubuntu', Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.user,
+.password {
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 5px;
+    width: 300px;
+    padding-left: 10px;
+    height: 40px;
+    margin: 10px 7px;
+    margin-top: 10px;
+}
+
+.log-in-button {
+    font-family: 'Google Sans Flex';
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    background-color: rgba(4, 5, 10, 0.384);
+    border: none;
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.15s;
+}
+
+.log-in-button:hover {
+    opacity: 0.8;
+}
+
+.log-in-button:active {
+    background-color: white;
+    color: rgb(30, 30, 30);
+}
+
+.continue-google {
+    position: relative;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: solid, 2px rgba(117, 116, 116, 0.767);
+    width: 261px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding: 3px;
+    font-family: 'Roboto';
+    transition: all 0.15s;
+}
+
+.continue-google:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.continue-google:active {
+    background-color: rgb(75, 75, 75);
+}
+
+.continue-facebook {
+    position: relative;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: solid, 2px rgba(117, 116, 116, 0.767);
+    width: 261px;
+    height: 40px;
+    margin-bottom: 5px;
+    font-family: 'Roboto';
+    transition: all 0.15s;
+}
+
+.continue-facebook:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.continue-facebook:active {
+    background-color: rgb(75, 75, 75);
+}
+
+.google-img {
+    position: absolute;
+    width: 30px;
+    left: 10px;
+}
+
+.facebook-img {
+    left: 10px;
+    width: 30px;
+    position: absolute;
+}
+
+
+.see-password {
+    right: 5px;
+    top: 19px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.see-password-picture {
+    background-color: transparent;
+    width: 30px;
+}
+
+.password {
+    width: 260px;
+    padding-right: 40px;
+}
+
+.hide-password-picture {
+    background-color: transparent;
+    width: 29px;
+    margin-right: 2px;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+.wrong-input {
+    background-color: red;
+    display: none;
+    position: absolute;
+    border-radius: 50px;
+    bottom: 20px;
+    left: 50%;
+    right: 50%;
+    width: 500px;
+    height: 55px;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    animation: error 0.2s ease;
+}
+
+.wrong-text {
+    color: white;
+    font-size: 18px;
+}
+
+.display {
+    display: flex;
+}
+
+@keyframes error {
+    0% {
+        transform: translateX(-50%);
+        bottom: -100px;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+}

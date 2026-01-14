@@ -1,0 +1,118 @@
+.global-right-section {
+    background-color: rgba(22, 22, 22, 0.781);
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 58px;
+    justify-content: center;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 2px solid rgba(117, 116, 116, 0.767);
+    margin-bottom: 1px;
+    border-top: 2px solid rgba(117, 116, 116, 0.767);
+    margin-top: 1px;
+    border-right: 2px solid rgba(117, 116, 116, 0.767);
+    margin-right: 1px;
+}
+
+.profile-container {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    pointer-events: auto;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(0, 20, 107);
+    ;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Arial;
+    color: white;
+}
+
+.z {
+    z-index: 6500;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.profile-container:hover {
+    border: solid 2px gray;
+    margin-top: -2px;
+}
+
+.logout {
+    position: absolute;
+    top: 140px;
+    margin-left: 5px;
+}
+
+.logout-picture {
+    width: 25px;
+    cursor: pointer;
+}
+
+.general-settings {
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.settings-picture {
+    width: 35px;
+}
+
+.notif-img {
+    position: absolute;
+    width: 30px;
+    top: 80px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.notif-count-container {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    top: 79px;
+    right: 14px;
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+
+.notif-count {
+    position: absolute;
+    top: -8px;
+    left: 3px;
+}
+
+.notif-count-plus {
+    top: -5px;
+    font-size: 8px;
+}
+
+.notif-count-less {
+    position: absolute;
+    top: -8px;
+    left: 5px;
+}
+
+.cache {
+    display: none;
+}

@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(22, 22, 22, 0.842);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+.pointer {
+    pointer-events: none;
+}
+
+.topic-get,
+.profile-get {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5000;
+    pointer-events: none;
+}
+
+.affiche {
+    display: flex;
+    pointer-events: auto;
+    flex-direction: row;
+}

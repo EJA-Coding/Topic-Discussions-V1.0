@@ -1,0 +1,166 @@
+.full-settings {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(17, 17, 17);
+    z-index: 100000;
+    animation: settings ease 0.5s;
+
+}
+
+.page-settings-theme,
+.page-settings {
+    opacity: 1;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(54, 54, 54);
+}
+
+.opacity {
+    opacity: 0;
+
+}
+
+.get-settings {
+    display: flex;
+}
+
+.left-section-settings {
+    display: flex;
+    z-index: 10001;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    width: 200px;
+    background-color: rgb(59, 59, 59);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+.account-settings {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title-setting-account {
+    font-family: "Google Sans Flex", Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 65px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.limit {
+    margin-bottom: -2px;
+    background-color: white;
+    width: 200px;
+    padding-bottom: 2px;
+}
+
+.test-settings {
+    color: white;
+    font-family: "Google Sans Flex", Arial, Helvetica, sans-serif;
+    text-align: center;
+    flex-shrink: 0;
+    margin-bottom: 1px;
+    height: 50px;
+    width: 198px;
+    background-color: rgb(59, 59, 59);
+    border-bottom: solid 1px rgb(126, 126, 126);
+    border-left: solid 1px rgb(126, 126, 126);
+    border-right: solid 1px rgb(126, 126, 126);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.test-settings:hover {
+    filter: brightness(130%);
+}
+
+
+/* Theme */
+
+.change-theme-text {
+    margin: 20px 10px;
+    color: white;
+    font-family: "Google Sans Flex", Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* SWITCH */
+.switch {
+    margin-left: 30px;
+    position: absolute;
+    background-color: gray;
+    width: 60px;
+    height: 33px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.slider {
+    margin: 0;
+    margin-top: 2px;
+    margin-left: 5px;
+    position: absolute;
+    top: 2px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.green {
+    background-color: rgb(4, 199, 4);
+    transition: all 0.5s;
+}
+
+.on {
+    transform: translateX(25px);
+    transition: all ease 0.5s;
+}
+
+@keyframes settings {
+    from {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.close-settings {
+    padding: 4px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    z-index: 1000001;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}

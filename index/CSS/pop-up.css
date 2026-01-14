@@ -1,0 +1,298 @@
+.name-topic {
+    pointer-events: none;
+    height: 300px;
+    width: 500px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    border: solid 1px rgba(117, 116, 116, 0.767);
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6000;
+    animation: cool ease 0.2s;
+    box-shadow: 0px 0px 25px black;
+}
+
+.topic-create-button {
+    position: absolute;
+    right: 63px;
+    border-radius: 12px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 5px;
+    width: 40px;
+    padding-left: 10px;
+    height: 42px;
+    margin: 10px 7px;
+    margin-top: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: white;
+
+}
+
+.topic-create-input {
+    position: absolute;
+    left: 70px;
+    border-radius: 12px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 5px;
+    width: 300px;
+    padding-left: 10px;
+    height: 40px;
+    margin: 10px 7px;
+    margin-top: 10px;
+}
+
+.close-picture {
+    position: absolute;
+    width: 50px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.error1 {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    color: red;
+    font-family: 'Google Sans Flex', Arial, Helvetica, sans-serif;
+}
+
+.showerror {
+    display: block;
+}
+
+
+/*------------------------------------PROFILE-----------------------------*/
+
+
+.profile-infos {
+    color: black;
+    display: none;
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+    right: -10px;
+    z-index: 5500;
+    border-radius: 16px;
+    animation: cool2 ease 0.2s;
+    box-shadow: 1px 1px 22px black;
+}
+
+.profile-infos.open {
+    display: block;
+    pointer-events: auto;
+}
+
+.profile-container.open {
+    pointer-events: auto;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+.two {}
+
+.username-style {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    max-width: 140px;
+    user-select: none;
+    position: absolute;
+    left: 68px;
+}
+
+.username-style:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile {
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    transition: all 0.2s;
+    background-color: rgb(0, 20, 107);
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.profile-picture-infos:hover {
+    filter: brightness(80%);
+}
+
+.creation-date {
+    position: absolute;
+    top: 46px;
+    font-size: 10px;
+    color: rgb(41, 41, 41);
+    left: 62px;
+    margin-top: 1px;
+    user-select: none;
+    font-family: 'Google Sans Flex';
+}
+
+.user-bio {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family: 'Roboto';
+}
+
+.line {
+    margin-top: 35px;
+}
+
+
+.log-out-button {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: rgb(0, 20, 107);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: solid 1px rgba(0, 0, 0, 0);
+}
+
+.log-out-button:hover {
+    color: rgb(0, 20, 107);
+    background-color: white;
+    border: solid 1px black;
+}
+
+
+
+/* -----------------------------------NOTIFS---------------------------------- */
+
+
+.see-notifs {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    flex: 1 1 auto;
+    overflow-y: scroll;
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(30, 30, 30);
+    top: 100px;
+    right: 50px;
+    border-radius: 20px;
+    border: solid 3px rgba(117, 116, 116, 0.767);
+    box-shadow: 0px 0px 25px black;
+    animation: cool2 ease 0.2s;
+}
+
+.real-notif {
+    flex-shrink: 0;
+    background-color: rgba(30, 30, 30);
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border: 2px solid rgba(117, 116, 116, 0.767);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.notif-text {
+    color: white;
+    font-family: 'Roboto';
+    margin-left: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+
+.not-seen-notif {
+    background-color: rgb(63, 63, 63);
+
+
+}
+
+.real-notif:hover {
+    opacity: 0.5;
+
+}
+
+.not-seen-notif:hover {
+    opacity: 0.8;
+}
+
+
+.real-notif:hover p {
+    cursor: text;
+}
+
+
+@keyframes cool2 {
+    from {
+        transform: scale(0.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes cool {
+    from {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+
+.show {
+    display: flex;
+    pointer-events: auto;
+    flex-direction: column;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/

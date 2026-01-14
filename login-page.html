@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+
+
+    <!-- Classiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+        rel="stylesheet">
+    <!-- Google Sans Flex -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Ubuntu -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Roboto -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Fredericka+the+Great&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Anton -->
+
+    <!-- Atypiques et Titres -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!--Fredericka the Great-->
+
+    <!-- Caligraphiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Fredericka+the+Great&family=Grechen+Fuemen&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Grechen Fuemen -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Fredericka+the+Great&family=Grechen+Fuemen&family=Nothing+You+Could+Do&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Nothing You Could Do -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredericka+the+Great&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Caveat -->
+
+
+    <link rel="stylesheet" href="login/CSS/main.css">
+</head>
+
+<body>
+    <div class="global-container">
+        <div class="title">
+            <p>Login</p>
+        </div>
+        <div class="logo-container"></div>
+        <div class="inputs-container">
+
+            <div class="user-input-container"><input type="text" placeholder="Username or Email" class="user"></div>
+
+            <div class="pasword-input-container">
+                <input type="password" placeholder="Password" class="password">
+                <button class="see-password"><img src="login/pictures/show-password.png"
+                        class="see-password-picture"></button>
+            </div>
+
+            <div class="log-in-container"><button class="log-in-button">LOGIN </button>
+            </div>
+
+            <div class=" reset-password-container"><a href="reset-password.html" class="reset-password">Forgot
+                    password?</a></div>
+
+            <div class="continue-google-container"><button class="continue-google">
+                    <img class="google-img" src="login/pictures/google.png" alt="">
+                    Continue with Google
+
+                </button></div>
+
+            <div class="continue-facebook-container"><button class="continue-facebook">
+                    <img class="facebook-img" src="login/pictures/facebook.png" alt="">
+                    Continue with Facebook </button>
+
+            </div>
+            <div class="new-account-container"><a href="sign-up-page.html" class="new-account">Create an account</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrong-input">
+        <p class="wrong-text">Le mot de passe ou le nom d'utilisateur est incorrect.</p>
+    </div>
+
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="login/scripts/script.js"></script>
+</body>
+
+</html>
